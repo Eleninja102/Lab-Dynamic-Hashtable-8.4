@@ -80,13 +80,12 @@ void Hashtable::insert(const int value) {
         htable[v] = {value, false};
     }else{
         while(true){
-            i++;
-            
             int v = fmod(value+(i*i), capacity);
             if(htable[v].empty){
                 htable[v] = {value, false};
                 break;
             }
+            i++;
         }
     }
     msize++;
@@ -135,20 +134,60 @@ int Hashtable::nextPrime(int prime){
 
 void Hashtable::remove(int value) {
     int v = fmod(value, capacity);
-
-    
+    if(htable[v].empty){
+        return;
+    }
+    if(htable[v].data == value){
+        htable[v] = {NULL, true};
+        return;
+    }
+    for(int i = 0; i < capacity; i++){
+        int v = fmod(value+(i*i), capacity);
+        if(htable[v].data == value){
+            htable[v] = {NULL, true};
+            return;
+        }
+    }
+    resize();
 }
 
-bool Hashtable::contains(int value) const { 
-    return true;
+bool Hashtable::contains(int value) const {
+    int v = fmod(value, capacity);
+    if(htable[v].empty){
+        return false;
+    }
+    if(htable[v].data == value){
+        return true;
+    }
+    for(int i = 0; i < capacity; i++){
+        int v = fmod(value+(i*i), capacity);
+        if(htable[v].data == value){
+            return true;
+        }
+    }
+    return false;
 }
 
 int Hashtable::indexOf(int value) const { 
+    int v = fmod(value, capacity);
+    if(htable[v].empty){
+        return -1;
+    }
+    if(htable[v].data == value){
+        return v;
+    }
+    for(int i = 0; i < capacity; i++){
+        int v2 = fmod(value+(i*i), capacity);
+        if(htable[v2].data == value){
+            return v2;
+        }
+    }
     return -1;
 }
 
 void Hashtable::clear() { 
-    <#code#>;
+    msize = 0;
+    htable = make_unique<tableHash[]>(capacity);
 }
 
 
