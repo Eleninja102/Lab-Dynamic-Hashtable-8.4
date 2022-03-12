@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D0B888A27DD5002007F9000 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B888927DD5002007F9000 /* main.cpp */; };
+		1D0B889227DD504C007F9000 /* Hashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B889027DD504C007F9000 /* Hashtable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1D0B888627DD5002007F9000 /* Lab: Dynamic Hashtable 8.4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab: Dynamic Hashtable 8.4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0B888927DD5002007F9000 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1D0B889027DD504C007F9000 /* Hashtable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hashtable.cpp; sourceTree = "<group>"; };
+		1D0B889127DD504C007F9000 /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				1D0B888927DD5002007F9000 /* main.cpp */,
+				1D0B889027DD504C007F9000 /* Hashtable.cpp */,
+				1D0B889127DD504C007F9000 /* Hashtable.hpp */,
 			);
 			path = "Lab: Dynamic Hashtable 8.4";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0B889227DD504C007F9000 /* Hashtable.cpp in Sources */,
 				1D0B888A27DD5002007F9000 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
