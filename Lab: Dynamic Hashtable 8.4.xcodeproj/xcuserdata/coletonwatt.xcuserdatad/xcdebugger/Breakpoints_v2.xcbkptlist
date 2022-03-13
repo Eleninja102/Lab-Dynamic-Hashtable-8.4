@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "383B1186-D85E-486D-AC8A-E90E6B72F810"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBB56424-DD38-4962-A323-082B256529D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "testConstructor()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03E4D353-CB41-492B-8CF4-B776AE63D689"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "testRemove()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "658B7E3F-BF9F-4E54-8185-1DA256C77708"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "testRemove()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FA91E68-8EE2-4891-BADF-41D4A1424B00"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "testResize()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D07F03D8-45C3-46EB-B0FE-9C7E66B9A681"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "testResize()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DF79A3D-E880-4BD8-9E86-24B7863A94E9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "testResize()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59431073-153F-4020-A919-F5BE1D06E05A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "insert(value)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "59431073-153F-4020-A919-F5BE1D06E05A - 246079f802e9dbcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::insert(int)"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "59431073-153F-4020-A919-F5BE1D06E05A - 43688163451f94bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::insert(double)"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "286">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B92492B9-CC94-4EF9-A043-7AF9BCD7D76C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/DynamicHashingTesting.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "testResize()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74A60D1E-D1F7-4D6B-989A-EEE271FA2A4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "rehash()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "74A60D1E-D1F7-4D6B-989A-EEE271FA2A4E - 830f270db0b2e103"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "74A60D1E-D1F7-4D6B-989A-EEE271FA2A4E - 38ffa2c12838e076"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64DD21D1-522E-45CF-B4FF-46930A0FDE89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "rehash()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "64DD21D1-522E-45CF-B4FF-46930A0FDE89 - 830f270db0b2e1ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "64DD21D1-522E-45CF-B4FF-46930A0FDE89 - 38ffa2c12838e099"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "621520B1-8B61-4D11-B4C6-EAEC68E209AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "insert(value)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "621520B1-8B61-4D11-B4C6-EAEC68E209AF - 246079f802e9db0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::insert(int)"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "621520B1-8B61-4D11-B4C6-EAEC68E209AF - 43688163451f9479"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::insert(double)"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "154">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55A653BF-B02F-4BB1-A6C8-6B56629491FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "rehash()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "55A653BF-B02F-4BB1-A6C8-6B56629491FF - 830f270db0b2e332"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "55A653BF-B02F-4BB1-A6C8-6B56629491FF - 38ffa2c12838e247"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "303">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0077B15D-26AB-43EE-BBBB-A83604C164EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "rehash()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0077B15D-26AB-43EE-BBBB-A83604C164EB - 830f270db0b2e1ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "0077B15D-26AB-43EE-BBBB-A83604C164EB - 38ffa2c12838e099"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6469989-355D-4E3B-AADA-7BCEC1B59927"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "rehash()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A6469989-355D-4E3B-AADA-7BCEC1B59927 - 830f270db0b2e0b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184"
+                  offsetFromSymbolStart = "230">
+               </Location>
+               <Location
+                  uuid = "A6469989-355D-4E3B-AADA-7BCEC1B59927 - 38ffa2c12838e1c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::rehash()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184"
+                  offsetFromSymbolStart = "234">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "785D5764-F1F8-47CF-A989-38C226FDCA11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab: Dynamic Hashtable 8.4/Hashtable.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "resize()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "785D5764-F1F8-47CF-A989-38C226FDCA11 - bca1d49f65c33edd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;int&gt;::resize()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  uuid = "785D5764-F1F8-47CF-A989-38C226FDCA11 - 240a34b17e493fee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hashtable&lt;double&gt;::resize()"
+                  moduleName = "Lab: Dynamic Hashtable 8.4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coletonwatt/Documents/School/School%2012th/CS%202420/Unit%208/Lab:%20Dynamic%20Hashtable%208.4/Lab:%20Dynamic%20Hashtable%208.4/Hashtable.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "73">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

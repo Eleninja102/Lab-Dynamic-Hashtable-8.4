@@ -185,7 +185,6 @@ bool testResize() {
 
 	table.insert(18);
 	passed &= checkTest("Resize 2", table.getCapacity(), 17);
-    cout << table;
 	passed &= checkTest("Resize 3", table.indexOf(5), 5);
 	passed &= checkTest("Resize 4", table.indexOf(15), 15);
 	passed &= checkTest("Resize 5", table.indexOf(34), 0);
