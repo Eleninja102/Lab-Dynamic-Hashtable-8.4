@@ -1,5 +1,5 @@
 
-#include "Hashtable.hpp"
+#include "Hashtable.h"
 #include<iostream>
 #include<string>
 #include<stdexcept>
