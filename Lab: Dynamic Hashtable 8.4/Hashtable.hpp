@@ -14,12 +14,13 @@
 
 using namespace std;
 
+template<class Type>
 struct tableHash {
-    int data;
+    Type data;
     bool empty = true;
 };
 
-
+template<class Type>
 class Hashtable{
 public:
     Hashtable();
@@ -28,13 +29,13 @@ public:
     Hashtable(const Hashtable& other);
     Hashtable& operator=(const Hashtable& other);
     
-    int size() const;
+    int getSize() const;
     void resize();
     int getCapacity() const;
     double getLoadFactorThreshold() const;
     bool empty() const;
     
-    void insert(const int value);
+    void insert(const Type value);
     void rehash();
     static bool isPrime(int prime);
     static int nextPrime(int prime);
@@ -45,10 +46,216 @@ public:
     
     void clear();
 private:
-    unique_ptr<tableHash[]> htable;
+    unique_ptr<tableHash<Type>[]> htable;
     int capacity;
     int msize = 0;
     double loadFactorThreshold;
 };
+
+
+template<class Type>
+Hashtable<Type>::Hashtable(){
+    capacity = 17;
+    loadFactorThreshold = 0.65;
+    htable = make_unique<tableHash<Type>[]>(capacity);
+}
+
+template<class Type>
+Hashtable<Type>::Hashtable(int cap){
+    capacity = cap;
+    loadFactorThreshold = 0.65;
+    htable = make_unique<tableHash<Type>[]>(capacity);
+
+}
+
+template<class Type>
+Hashtable<Type>::Hashtable(int cap , double thres) {
+    capacity = cap;
+    loadFactorThreshold = thres;
+    htable = make_unique<tableHash<Type>[]>(capacity);
+
+    
+}
+
+template<class Type>
+Hashtable<Type>::Hashtable(const Hashtable &other) {
+    capacity = other.capacity;
+    msize = other.msize;
+    htable = make_unique<tableHash<Type>[]>(capacity);
+    for(int i = 0; i < capacity; i++){
+        htable[i]  = other.htable[i];
+    }
+}
+
+template<class Type>
+Hashtable<Type> &Hashtable<Type>::operator=(const Hashtable &other) {
+    capacity = other.capacity;
+    msize = other.msize;
+    htable = make_unique<tableHash<Type>[]>(capacity);
+    for(int i = 0; i < capacity; i++){
+        htable[i]  = other.htable[i];
+    }
+    return *this;
+}
+
+template<class Type>
+int Hashtable<Type>::getSize() const {
+    return msize;
+}
+
+template<class Type>
+void Hashtable<Type>::resize(){
+    int z = 0;
+    for(int i = 0; i < capacity; i++){
+        if(!htable[i].empty){
+            z++;
+        }
+    }
+    msize = z;
+}
+
+template<class Type>
+int Hashtable<Type>::getCapacity() const {
+    return capacity;
+}
+
+template<class Type>
+double Hashtable<Type>::getLoadFactorThreshold() const {
+    return loadFactorThreshold;
+}
+
+template<class Type>
+bool Hashtable<Type>::empty() const {
+
+    return (msize == 0);
+}
+
+template<class Type>
+void Hashtable<Type>::insert(const Type value) {
+    int i = 0;
+    int v = fmod(value, capacity);
+    if(htable[v].empty){
+        htable[v] = {value, false};
+    }else{
+        while(true){
+            int v = fmod(value+(i*i), capacity);
+            if(htable[v].empty){
+                htable[v] = {value, false};
+                break;
+            }
+            i++;
+        }
+    }
+    msize++;
+    
+    if ((msize/(float)capacity) > loadFactorThreshold){
+        rehash();
+        resize();
+    }
+}
+
+template<class Type>
+void Hashtable<Type>::rehash() {
+    int tempCapacity = capacity;
+    capacity = nextPrime(capacity*2);
+    auto htable2 = make_unique<tableHash<Type>[]>(capacity);
+    for(int i = 0; i <= tempCapacity; i++){
+        if(htable[i].empty){
+            insert(htable[i].data);
+        }
+    }
+    htable = move(htable2);
+}
+
+template<class Type>
+bool Hashtable<Type>::isPrime(int prime) {
+    if(prime % 2 == 0){
+        return false;
+    }
+    for(int i = 3; i <= prime/2 + 1; i = i+2){
+        if(prime % i == 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+template<class Type>
+int Hashtable<Type>::nextPrime(int prime){
+    prime++;
+    if(prime % 2 == 0){
+        prime++;
+    }
+    for(int i = 0; true; i = i+2){
+        if(isPrime(prime + i)){
+            return prime + i;
+        }
+    }
+    return -1;
+}
+
+template<class Type>
+void Hashtable<Type>::remove(int value) {
+    int v = fmod(value, capacity);
+    if(htable[v].empty){
+        return;
+    }
+    if(htable[v].data == value){
+        htable[v] = {NULL, true};
+        resize();
+        return;
+    }
+    for(int i = 0; i < capacity; i++){
+        int v = fmod(value+(i*i), capacity);
+        if(htable[v].data == value){
+            htable[v] = {NULL, true};
+            resize();
+            return;
+        }
+    }
+}
+
+template<class Type>
+bool Hashtable<Type>::contains(int value) const {
+    int v = fmod(value, capacity);
+    if(htable[v].empty){
+        return false;
+    }
+    if(htable[v].data == value){
+        return true;
+    }
+    for(int i = 0; i < capacity; i++){
+        int v = fmod(value+(i*i), capacity);
+        if(htable[v].data == value){
+            return true;
+        }
+    }
+    return false;
+}
+
+template<class Type>
+int Hashtable<Type>::indexOf(int value) const {
+    int v = fmod(value, capacity);
+    if(htable[v].empty){
+        return -1;
+    }
+    if(htable[v].data == value){
+        return v;
+    }
+    for(int i = 0; i < capacity; i++){
+        int v2 = fmod(value+(i*i), capacity);
+        if(htable[v2].data == value){
+            return v2;
+        }
+    }
+    return -1;
+}
+
+template<class Type>
+void Hashtable<Type>::clear() {
+    msize = 0;
+    htable = make_unique<tableHash<Type>[]>(capacity);
+}
+
 
 #endif /* Hashtable_hpp */
