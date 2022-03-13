@@ -94,6 +94,7 @@ bool testInsert() {
 	passed &= checkTest("Insert 13", table.contains(47), true);
 	passed &= checkTest("Insert 14", table.contains(13), true);
 	passed &= checkTest("Insert 15", table.contains(64), true);
+    
 	return passed;
 }
 
@@ -184,6 +185,7 @@ bool testResize() {
 
 	table.insert(18);
 	passed &= checkTest("Resize 2", table.getCapacity(), 17);
+    cout << table;
 	passed &= checkTest("Resize 3", table.indexOf(5), 5);
 	passed &= checkTest("Resize 4", table.indexOf(15), 15);
 	passed &= checkTest("Resize 5", table.indexOf(34), 0);

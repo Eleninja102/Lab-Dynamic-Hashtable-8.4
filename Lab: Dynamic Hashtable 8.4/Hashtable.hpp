@@ -11,8 +11,17 @@
 #include <iostream>
 #include <memory>
 #include <math.h>
+#include <sstream>
+#include <iomanip>
+
 
 using namespace std;
+
+template<class Type>
+class Hashtable;
+
+template<class Type>
+ostream& operator<< (ostream &, Hashtable<Type>&);
 
 template<class Type>
 struct tableHash {
@@ -45,6 +54,8 @@ public:
     int indexOf(int value) const;
     
     void clear();
+    
+    friend ostream& operator<< <>(ostream &, Hashtable<Type>&);
 private:
     unique_ptr<tableHash<Type>[]> htable;
     int capacity;
@@ -132,13 +143,14 @@ bool Hashtable<Type>::empty() const {
 
 template<class Type>
 void Hashtable<Type>::insert(const Type value) {
-    int i = 0;
+    Type i = 0;
     int v = fmod(value, capacity);
     if(htable[v].empty){
         htable[v] = {value, false};
     }else{
         while(true){
-            int v = fmod(value+(i*i), capacity);
+            Type x = value + (i*i);
+            v = fmod(x, capacity);
             if(htable[v].empty){
                 htable[v] = {value, false};
                 break;
@@ -147,7 +159,8 @@ void Hashtable<Type>::insert(const Type value) {
         }
     }
     msize++;
-    
+    resize();
+
     if ((msize/(float)capacity) > loadFactorThreshold){
         rehash();
         resize();
@@ -156,15 +169,26 @@ void Hashtable<Type>::insert(const Type value) {
 
 template<class Type>
 void Hashtable<Type>::rehash() {
-    int tempCapacity = capacity;
+    int tempsize = msize;
+    int tempcap = capacity;
     capacity = nextPrime(capacity*2);
-    auto htable2 = make_unique<tableHash<Type>[]>(capacity);
-    for(int i = 0; i <= tempCapacity; i++){
-        if(htable[i].empty){
-            insert(htable[i].data);
+    resize();
+    Type something[tempsize+1];
+    int arrayPlacement = 0;
+    for(int i = 0; i <= tempcap; i++){
+        if(!htable[i].empty){
+            something[arrayPlacement] = htable[i].data;
+            arrayPlacement++;
         }
     }
-    htable = move(htable2);
+    clear();
+    
+    for(int i = 0; i <= tempsize; i++){
+        if(something[i] != 0){
+            insert(something[i]);
+        }
+    }
+    //htable = move(htable2);
 }
 
 template<class Type>
@@ -256,6 +280,23 @@ void Hashtable<Type>::clear() {
     msize = 0;
     htable = make_unique<tableHash<Type>[]>(capacity);
 }
+
+
+
+template<class Type>
+ostream& operator<< (ostream & out, Hashtable<Type>& h) {
+    out << "\nCapacity: " << h.capacity << "\n";
+    for (int i = 0; i < h.capacity; i++) {
+
+       // if (h.htable[i].empty == false) {
+            out << i << ": " << h.htable[i].data << endl;
+       // }
+
+    }
+    return out;
+}
+
+
 
 
 #endif /* Hashtable_hpp */
