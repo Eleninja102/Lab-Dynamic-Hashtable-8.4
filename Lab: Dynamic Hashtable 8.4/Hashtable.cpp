@@ -6,7 +6,6 @@
 //
 
 #include "Hashtable.hpp"
-
 template<class Type>
 Hashtable<Type>::Hashtable(){
     capacity = 17;
