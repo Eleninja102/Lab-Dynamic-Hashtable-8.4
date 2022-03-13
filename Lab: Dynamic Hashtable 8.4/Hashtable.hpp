@@ -39,7 +39,6 @@ public:
     Hashtable& operator=(const Hashtable& other);
     
     int getSize() const;
-    void resize();
     int getCapacity() const;
     double getLoadFactorThreshold() const;
     bool empty() const;
@@ -114,16 +113,6 @@ int Hashtable<Type>::getSize() const {
     return msize;
 }
 
-template<class Type>
-void Hashtable<Type>::resize(){
-    int z = 0;
-    for(int i = 0; i < capacity; i++){
-        if(!htable[i].empty){
-            z++;
-        }
-    }
-    msize = z;
-}
 
 template<class Type>
 int Hashtable<Type>::getCapacity() const {
@@ -159,11 +148,11 @@ void Hashtable<Type>::insert(const Type value) {
         }
     }
     msize++;
-    resize();
+    
 
     if ((msize/(float)capacity) > loadFactorThreshold){
         rehash();
-        resize();
+    
     }
 }
 
@@ -172,7 +161,6 @@ void Hashtable<Type>::rehash() {
     int tempsize = msize;
     int tempcap = capacity;
     capacity = nextPrime(capacity*2);
-    resize();
     Type something[tempsize+1];
     int arrayPlacement = 0;
     for(int i = 0; i <= tempcap; i++){
@@ -188,7 +176,6 @@ void Hashtable<Type>::rehash() {
             insert(something[i]);
         }
     }
-    //htable = move(htable2);
 }
 
 template<class Type>
@@ -226,14 +213,14 @@ void Hashtable<Type>::remove(int value) {
     }
     if(htable[v].data == value){
         htable[v] = {NULL, true};
-        resize();
+        msize--;
         return;
     }
     for(int i = 0; i < capacity; i++){
         int v = fmod(value+(i*i), capacity);
         if(htable[v].data == value){
             htable[v] = {NULL, true};
-            resize();
+            msize--;
             return;
         }
     }
@@ -260,16 +247,13 @@ bool Hashtable<Type>::contains(int value) const {
 template<class Type>
 int Hashtable<Type>::indexOf(int value) const {
     int v = fmod(value, capacity);
-    if(htable[v].empty){
-        return -1;
-    }
-    if(htable[v].data == value){
-        return v;
-    }
     for(int i = 0; i < capacity; i++){
-        int v2 = fmod(value+(i*i), capacity);
-        if(htable[v2].data == value){
-            return v2;
+        v = fmod(value+(i*i), capacity);
+        if(htable[v].empty){
+            return -1;
+        }
+        if(htable[v].data == value){
+            return v;
         }
     }
     return -1;
